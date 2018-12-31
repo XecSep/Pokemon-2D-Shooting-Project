@@ -37,6 +37,17 @@ public class Player : MonoBehaviour
         Fire();
     }
 
+    void OnTriggerEnter2D(Collider2D coll)
+    {
+        print(coll.gameObject.name);
+
+        //if(coll.gameObject.tag=="Enemy")
+        //{
+        //    Destroy(coll.gameObject);
+        //    Destroy(gameObject);
+        //}
+    }
+
     private void Move()
     {
         h = Input.GetAxis("Horizontal");
