@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    enum Target
-    {
-        Enemy,
-        Player
-    };
-
     protected Transform tr;
 
     public float moveSpeed = 10.0f;

@@ -20,25 +20,6 @@ public class Enemy : MonoBehaviour
         Move();
     }
 
-    //public void OnTriggerEnter2D(Collider2D coll)
-    //{
-    //    if (coll.gameObject.tag == "Bullet")
-    //    {
-    //        Destroy(gameObject);
-    //        //GameManager.score += 100;
-    //    }
-    //}
-
-    private void OnCollisionEnter2D(Collision2D coll)
-    {
-        if (coll.gameObject.tag == "Bullet")
-        {
-            print("Enemy");
-            //Destroy(gameObject);
-            //GameManager.score += 100;
-        }
-    }
-
     private void Move()
     {
         tr.Translate(Vector2.down * moveSpeed * Time.deltaTime, Space.Self);

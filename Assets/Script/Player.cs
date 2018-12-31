@@ -37,14 +37,6 @@ public class Player : MonoBehaviour
         Fire();
     }
 
-    private void OnTriggerEnter2D(Collider2D coll)
-    {
-        if (coll.gameObject.tag == "Enemy" || coll.gameObject.tag == "Bullet")
-        {
-            Destroy(gameObject);
-        }
-    }
-
     private void Move()
     {
         h = Input.GetAxis("Horizontal");
