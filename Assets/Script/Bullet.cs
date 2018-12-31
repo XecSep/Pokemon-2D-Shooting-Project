@@ -4,24 +4,31 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    protected Transform tr;
+    private Transform tr;
 
     public float moveSpeed = 10.0f;
 
     // Start is called before the first frame update
-    protected void Start()
+    private void Start()
     {
         tr = GetComponent<Transform>();
     }
 
     // Update is called once per frame
-    protected void Update()
+    private void Update()
     {
         Move();
+
+        Destroy();
     }
 
-    protected void Move()
+    private void Move()
     {
         tr.Translate(Vector2.up * moveSpeed * Time.deltaTime, Space.Self);
+    }
+
+    private void Destroy()
+    {
+        Destroy(gameObject, 1.0f);
     }
 }
