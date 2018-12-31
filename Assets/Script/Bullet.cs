@@ -22,6 +22,15 @@ public class Bullet : MonoBehaviour
         Destroy();
     }
 
+    private void OnTriggerEnter(Collider coll)
+    {
+        if (coll.gameObject.tag == "Enemy")
+        {
+            Destroy(coll.gameObject);
+            Destroy(gameObject);
+        }
+    }
+
     private void Move()
     {
         tr.Translate(Vector2.up * moveSpeed * Time.deltaTime, Space.Self);

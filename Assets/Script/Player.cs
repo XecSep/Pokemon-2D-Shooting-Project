@@ -43,15 +43,13 @@ public class Player : MonoBehaviour
         //gameManager.MenuScene();
     }
 
-    void OnTriggerEnter2D(Collider2D coll)
+    private void OnTriggerEnter(Collider coll)
     {
-        print(coll.gameObject.name);
-
-        //if(coll.gameObject.tag=="Enemy")
-        //{
-        //    Destroy(coll.gameObject);
-        //    Destroy(gameObject);
-        //}
+        if (coll.gameObject.tag == "Enemy")
+        {
+            Destroy(coll.gameObject);
+            Destroy(gameObject);
+        }
     }
 
     private void Move()
