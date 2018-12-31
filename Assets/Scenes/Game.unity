@@ -203,6 +203,75 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollSpeed: 1.5
+--- !u!1001 &150793315
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1364379593255865924, guid: 94c803244f948b746b102b6591743f9d,
+        type: 3}
+      propertyPath: m_Name
+      value: Cheller
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364379593255865926, guid: 94c803244f948b746b102b6591743f9d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364379593255865926, guid: 94c803244f948b746b102b6591743f9d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364379593255865926, guid: 94c803244f948b746b102b6591743f9d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364379593255865926, guid: 94c803244f948b746b102b6591743f9d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364379593255865926, guid: 94c803244f948b746b102b6591743f9d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364379593255865926, guid: 94c803244f948b746b102b6591743f9d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364379593255865926, guid: 94c803244f948b746b102b6591743f9d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364379593255865926, guid: 94c803244f948b746b102b6591743f9d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364379593255865926, guid: 94c803244f948b746b102b6591743f9d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364379593255865926, guid: 94c803244f948b746b102b6591743f9d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364379593255865926, guid: 94c803244f948b746b102b6591743f9d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 94c803244f948b746b102b6591743f9d, type: 3}
 --- !u!1 &250275161
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,7 +284,7 @@ GameObject:
   m_Layer: 0
   m_Name: FirePos
   m_TagString: Untagged
-  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
