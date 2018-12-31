@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+   //private GameManager gameManager;
+
     private Transform tr;
     // 총알
     public GameObject bullet;
@@ -26,6 +28,8 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+
         tr = GetComponent<Transform>();
     }
 
@@ -35,6 +39,8 @@ public class Player : MonoBehaviour
         Move();
 
         Fire();
+
+        //gameManager.MenuScene();
     }
 
     void OnTriggerEnter2D(Collider2D coll)
